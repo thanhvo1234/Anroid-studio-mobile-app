@@ -1,0 +1,12 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="app_name">CourseWork</string>
+    <string name="select">Select Level</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hike_input_name">Name of the hike<font color='#FF2400'>*</font></string>
+    <string name="location_input_name">Location<font color='#FF2400'>*</font></string>
+    <string name="date_input_name">Date of the hike<font color='#FF2400'>*</font></string>
+    <string name="input_parking">Parking available<font color='#FF2400'>*</font></string>
+    <string name="input_length">Length of the hike<font color='#FF2400'>*</font></string>
+    <string name="select_level">Difficulty Level<font color='#FF2400'>*</font></string>
+    <string name="input_description">Description<font color='#FF2400'>*</font></string>
+</resources>

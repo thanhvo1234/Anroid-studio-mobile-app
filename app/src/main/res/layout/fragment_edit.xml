@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditFragment">
+
+
+        <LinearLayout
+            android:id="@+id/edit_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/textEditHike"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edit hike"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutEditNameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/editNameOfTheHike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/hike_input_name"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    />
+
+                <EditText
+                    android:id="@+id/nameEditHikeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="18"
+                    android:inputType="textPersonName"
+                    android:hint="Son Dong"
+                    android:text=""
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutEditLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/editLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/location_input_name"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    />
+
+                <EditText
+                    android:id="@+id/nameEditLocationText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="18"
+                    android:inputType="textPersonName"
+                    android:hint="Da Nang"
+                    android:text=""
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutEditDateOfTheHike"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/editDateOfTheHike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/date_input_name"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    />
+
+                <TextView
+                    android:id="@+id/dateEditHikeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="18"
+                    android:hint="07/11/2023"
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:textSize="25dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/radioEditButtonYesNo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/input_parking"
+                    android:textStyle="bold"
+                    android:textSize="18dp"/>
+
+                <RadioGroup
+                    android:id="@+id/groupEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <RadioButton
+                        android:id="@+id/radioEditButton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:text="Yes"/>
+                    <RadioButton
+                        android:id="@+id/radioEditButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:text="No"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutEditLengthHike"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/input_length"
+                    android:textStyle="bold"
+                    android:textSize="18dp"/>
+
+                <EditText
+                    android:id="@+id/lengthEditHikeText"
+                    android:layout_width="170dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="1dp"
+                    android:ems="10"
+                    android:hint="100m"
+                    android:textAlignment="center"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutEditDifficultyLevel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="18dp"
+                    android:text="@string/select_level"
+                    android:textStyle="bold"
+                    android:textSize="18dp"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="210dp"
+                    android:layout_height="65dp"
+                    android:layout_marginLeft="10dp"
+                    android:hint="@string/select"
+                    android:backgroundTint="@color/gray"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    >
+
+                    <AutoCompleteTextView
+                        android:id="@+id/difficultyEditLevelText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutEditDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/descriptionEditTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/input_description"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    />
+
+                <MultiAutoCompleteTextView
+                    android:id="@+id/descriptionEditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:ems="80"
+                    android:inputType="textPersonName"
+                    android:hint="There is a big mountain nearby,..."
+                    android:gravity="top"
+                    />
+                <Button
+                    android:id="@+id/editButton"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="UPDATE"
+                    android:backgroundTint="@color/black"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+</FrameLayout>
