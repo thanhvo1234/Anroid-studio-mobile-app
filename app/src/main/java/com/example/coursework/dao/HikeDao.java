@@ -25,4 +25,7 @@ public interface HikeDao {
 
     @Update
     void updateHike(Hike hike);
+
+    @Query("SELECT * FROM hikes WHERE nameHike LIKE :name")
+    List<Hike> searchHikes(String name);
 }
