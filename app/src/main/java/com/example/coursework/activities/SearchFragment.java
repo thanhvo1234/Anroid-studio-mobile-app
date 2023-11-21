@@ -14,9 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 
-import com.example.coursework.EditFragment;
 import com.example.coursework.HikeAdapter;
 import com.example.coursework.R;
 import com.example.coursework.database.HikeDatabase;

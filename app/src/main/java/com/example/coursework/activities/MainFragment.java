@@ -14,15 +14,12 @@ import androidx.room.Room;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Adapter;
 import android.widget.Button;
 
-import com.example.coursework.EditFragment;
 import com.example.coursework.HikeAdapter;
 import com.example.coursework.R;
 import com.example.coursework.database.HikeDatabase;
 import com.example.coursework.models.Hike;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.List;
 

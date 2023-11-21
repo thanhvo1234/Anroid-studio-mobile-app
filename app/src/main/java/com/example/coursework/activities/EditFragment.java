@@ -1,4 +1,4 @@
-package com.example.coursework;
+package com.example.coursework.activities;
 
 import android.app.DatePickerDialog;
 import android.os.Bundle;
@@ -21,6 +21,7 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.coursework.R;
 import com.example.coursework.activities.MainFragment;
 import com.example.coursework.database.HikeDatabase;
 import com.example.coursework.models.Hike;

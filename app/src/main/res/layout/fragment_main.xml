@@ -4,47 +4,51 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.MainFragment">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
         <LinearLayout
-            android:id="@+id/homeDetails"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="5dp"
-            android:gravity="center"
-            android:background="#000000"
-
-            >
-
-            <TextView
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/homeDetails"
                 android:layout_width="match_parent"
-                android:layout_weight="1"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
                 android:gravity="center"
-                android:layout_margin="16dp"
-                android:text="Home"
-                android:textColor="#FFFFFF"
-                android:textSize="30sp" />
+                android:background="#000000"
 
-            <Button
-                android:id="@+id/deleteAllButton"
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:text="Delete All"
-                android:backgroundTint="#C12A2A"
-                android:textColor="#FFFAFA"
-                android:layout_margin="16dp"/>
+                >
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:layout_margin="16dp"
+                    android:text="Home"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp" />
+
+                <Button
+                    android:id="@+id/deleteAllButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Delete All"
+                    android:backgroundTint="#C12A2A"
+                    android:textColor="#FFFAFA"
+                    android:layout_margin="16dp"/>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
         </LinearLayout>
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </LinearLayout>
+    </ScrollView>
 
 </FrameLayout>
